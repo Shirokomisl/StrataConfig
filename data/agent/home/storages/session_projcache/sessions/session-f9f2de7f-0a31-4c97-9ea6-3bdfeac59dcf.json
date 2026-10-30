@@ -1,0 +1,284 @@
+{
+  "version": 7,
+  "record": {
+    "identity": {
+      "formatVersion": 4,
+      "createdAt": 1792991443986,
+      "cwd": "C:\\Users\\Norikae\\Documents\\Strata\\Workspace",
+      "isSeeded": false,
+      "inheritedEventCount": 0
+    },
+    "rows": {
+      "title": {
+        "ver": 1,
+        "seq": 204,
+        "val": "найди файл конфигурац"
+      },
+      "titleInput": {
+        "ver": 3,
+        "seq": 204,
+        "val": {
+          "first": {
+            "seq": 12,
+            "text": "найди файл конфигурации Strata на этом ПК"
+          },
+          "count": 3,
+          "lastSeq": 200
+        }
+      },
+      "llmRetry": {
+        "ver": 1,
+        "seq": 204,
+        "val": {}
+      },
+      "sandboxMode": {
+        "ver": 1,
+        "seq": 204,
+        "val": "danger-full-access"
+      },
+      "goal": {
+        "ver": 6,
+        "seq": 204,
+        "val": {
+          "current": null,
+          "seenGoalIds": [],
+          "failure": null
+        }
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 204,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 99900,
+            "outputTokens": 9389,
+            "cacheReadTokens": 234269,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 3,
+            "step": 1,
+            "buckets": {
+              "uncachedInputTokens": 14208,
+              "outputTokens": 1024,
+              "cacheReadTokens": 15060,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 5,
+        "seq": 204,
+        "val": {
+          "surfaceTokens": 19252,
+          "contextWindow": 32768,
+          "pressureTokens": 29268,
+          "sampledSurfaceTokens": 18756
+        }
+      },
+      "contextBreakdown": {
+        "ver": 6,
+        "seq": 204,
+        "val": {
+          "systems": [
+            {
+              "seq": 11,
+              "tokens": 394
+            }
+          ],
+          "surfaceTokens": 19252,
+          "breakdown": {
+            "systemTokens": 394,
+            "toolsTokens": 5821,
+            "messageTokens": 18858
+          }
+        }
+      },
+      "turnBoundary": {
+        "ver": 2,
+        "seq": 204,
+        "val": {
+          "openTurnStartSeq": null,
+          "lastStepStartSeq": 199,
+          "lastStepBoundary": {
+            "kind": "end",
+            "seq": 203
+          },
+          "lastTurn": 3
+        }
+      },
+      "inbox": {
+        "ver": 1,
+        "seq": 204,
+        "val": {
+          "next-turn": [],
+          "next-step": []
+        }
+      },
+      "sessionStats": {
+        "ver": 1,
+        "seq": 204,
+        "val": {
+          "turns": 3,
+          "steps": 19,
+          "llmMs": 311341,
+          "toolMs": 47592,
+          "ttftMs": 116536,
+          "ttftSteps": 19,
+          "decodeMs": 194805,
+          "decodeTokens": 9389,
+          "lastTurn": 3,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "turnOutline": {
+        "ver": 2,
+        "seq": 204,
+        "val": {
+          "turns": [
+            {
+              "turn": 1,
+              "seq": 8,
+              "prompt": "найди файл конфигурации Strata на этом ПК",
+              "response": "Нашёл. У Strata нет одного универсального файла — конфигурация разложена по четырём местам; главный файл — `app-setting…"
+            },
+            {
+              "turn": 2,
+              "seq": 77,
+              "prompt": "можешь найти место интеграции MCP серверов со Str…",
+              "response": "Интеграция MCP в Strata разведена по **двум слоям** — движок (llama.cpp/Strata engine) и агентный харнес (чат). Вот кон…"
+            },
+            {
+              "turn": 3,
+              "seq": 195,
+              "prompt": "можешь дать подробный гайд по интеграции с mcp-fo…",
+              "response": "Проверю, что именно установлено и чем можно запустить Python-пакет."
+            }
+          ],
+          "draft": ""
+        }
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 204,
+        "val": "standard"
+      },
+      "userQuestions": {
+        "ver": 2,
+        "seq": 204,
+        "val": {
+          "inheritedEventCount": 0,
+          "timed": false,
+          "questions": {
+            "active": [],
+            "settled": []
+          }
+        }
+      },
+      "permissions": {
+        "ver": 2,
+        "seq": 204,
+        "val": {
+          "preset": "strata-manual",
+          "sandbox": "danger-full-access",
+          "approval": "ask",
+          "seeded": false
+        }
+      },
+      "workingDirectory": {
+        "ver": 1,
+        "seq": 204,
+        "val": "C:\\Users\\Norikae\\Documents\\Strata\\Workspace"
+      },
+      "subagentCatalog": {
+        "ver": 6,
+        "seq": 204,
+        "val": {
+          "inheritedEventCount": 0
+        }
+      },
+      "subagentTiming": {
+        "ver": 3,
+        "seq": 204,
+        "val": {
+          "descriptorSeen": false,
+          "settledMs": 0
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 204,
+        "val": {}
+      },
+      "timeContext": {
+        "ver": 2,
+        "seq": 204,
+        "val": {
+          "lastMessageTime": 1792993366088,
+          "lastInjectionTime": 1792993331974,
+          "lastTurnInjectionTime": null
+        }
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 204,
+        "val": null
+      },
+      "plan": {
+        "ver": 3,
+        "seq": 204,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null,
+          "activeAtLastHeader": false
+        }
+      },
+      "subagentModelSelectionPolicy": {
+        "ver": 1,
+        "seq": 204,
+        "val": [
+          {
+            "provider": "strata-local",
+            "model": "iq3_s"
+          }
+        ]
+      },
+      "harnessDevLegacyPrompt": {
+        "ver": 1,
+        "seq": 204,
+        "val": {
+          "source": null,
+          "web": null
+        }
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 204,
+        "val": {
+          "lastUsed": {
+            "provider": "strata-local",
+            "model": "iq3_s",
+            "reasoningEffort": "medium"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 204,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1792993331974
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 204,
+        "val": null
+      }
+    }
+  }
+}

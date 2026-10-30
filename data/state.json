@@ -1,0 +1,129 @@
+{
+  "version": 1,
+  "setup": {
+    "complete": true,
+    "flowVersion": 2,
+    "step": 4,
+    "history": [
+      {
+        "step": 2,
+        "at": "2026-10-25T19:44:37.431Z"
+      },
+      {
+        "step": 2,
+        "at": "2026-10-25T19:44:37.924Z"
+      },
+      {
+        "step": 2,
+        "at": "2026-10-25T19:45:19.152Z"
+      },
+      {
+        "step": 2,
+        "at": "2026-10-25T19:45:25.692Z"
+      },
+      {
+        "step": 2,
+        "at": "2026-10-25T19:45:29.337Z"
+      },
+      {
+        "step": 2,
+        "at": "2026-10-25T19:45:45.132Z"
+      },
+      {
+        "step": 2,
+        "at": "2026-10-25T19:50:04.596Z"
+      },
+      {
+        "step": 2,
+        "at": "2026-10-25T19:50:41.608Z"
+      },
+      {
+        "step": 3,
+        "at": "2026-10-25T19:50:47.410Z"
+      },
+      {
+        "step": 3,
+        "at": "2026-10-25T19:50:47.892Z"
+      },
+      {
+        "step": 3,
+        "at": "2026-10-25T19:51:16.035Z"
+      },
+      {
+        "step": 3,
+        "at": "2026-10-25T19:51:16.493Z"
+      },
+      {
+        "step": 3,
+        "at": "2026-10-25T19:51:20.127Z"
+      },
+      {
+        "step": 4,
+        "at": "2026-10-25T20:17:06.628Z"
+      },
+      {
+        "step": 4,
+        "at": "2026-10-25T20:17:07.127Z"
+      },
+      {
+        "step": 4,
+        "at": "2026-10-25T20:17:27.750Z"
+      },
+      {
+        "step": 4,
+        "at": "2026-10-25T20:17:36.466Z"
+      },
+      {
+        "step": 4,
+        "at": "2026-10-25T20:17:36.932Z"
+      },
+      {
+        "step": 4,
+        "at": "2026-10-25T20:17:45.600Z"
+      }
+    ],
+    "dismissed": false,
+    "choices": {
+      "onboarding": {
+        "step": 4,
+        "family": "qwen3.8",
+        "size": "gyro-gyro-s",
+        "context": 32768,
+        "vision": true,
+        "directory": "",
+        "profile": "performance",
+        "installJobId": "3bd51580-fdf4-400e-92f2-496c0c83ff91",
+        "tuneJobId": "c2127328-fbb2-4311-9c38-b1037d9ed365",
+        "calibrate": true
+      }
+    },
+    "completedAt": "2026-10-25T20:18:21.089Z"
+  },
+  "installed": {},
+  "current": null,
+  "loaded": null,
+  "beginner": {
+    "priority": "balanced",
+    "contextLength": "recommended",
+    "readImages": false,
+    "gpuIdle": "never"
+  },
+  "expert": {},
+  "serving": {
+    "otherDevices": false,
+    "apiKey": null,
+    "pauseServing": false
+  },
+  "agentTools": {
+    "off": [],
+    "search": {
+      "provider": "builtin",
+      "key": ""
+    },
+    "browser": {
+      "enabled": false
+    },
+    "webWithoutAsking": true,
+    "custom": []
+  }
+}

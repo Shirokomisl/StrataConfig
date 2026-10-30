@@ -1,0 +1,12 @@
+{
+  "summary": "Measured benchmark complete.",
+  "at": "2026-10-25T20:18:21.076Z",
+  "model": "gyro-gyro-s",
+  "durationMs": 5157,
+  "tokensIn": 24,
+  "tokensOut": 200,
+  "outputTps": 43.2,
+  "promptTps": 46.4,
+  "source": "engine",
+  "settings": "Greedy · thinking off · up to 200 output tokens"
+}

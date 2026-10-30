@@ -1,0 +1,101 @@
+{
+  "exe": "component:strata-engine",
+  "args": [
+    "--pack",
+    "C:\\Users\\Norikae\\Documents\\Strata\\packs\\iq3_s",
+    "--native",
+    "C:\\Users\\Norikae\\Documents\\Strata\\models\\IQ3_S\\Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00001-of-00002.gguf",
+    "--ple-gguf",
+    "C:\\Users\\Norikae\\Documents\\Strata\\models\\IQ3_S\\Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00002-of-00002.gguf",
+    "--expert-profile",
+    "C:\\Users\\Norikae\\AppData\\Local\\Programs\\Strata\\control\\data\\expert-profile.bin",
+    "--expert-cache",
+    "auto",
+    "--prefill",
+    "auto",
+    "--spec",
+    "4",
+    "--spec-min-p",
+    "0.5",
+    "--mtp",
+    "C:\\Users\\Norikae\\Documents\\Strata\\mtp\\rt",
+    "--max-context",
+    "65536",
+    "--kv",
+    "int8",
+    "--vision",
+    "--vram-reserve-mib",
+    "1536"
+  ],
+  "cwd": "C:\\Users\\Norikae\\AppData\\Local\\Programs\\Strata\\control",
+  "tokenizer": "C:\\Users\\Norikae\\Documents\\Strata\\packs\\iq3_s\\tokenizer",
+  "model_name": "qwen3.8-flash-next-iq3_s",
+  "log": "C:\\Users\\Norikae\\AppData\\Local\\Strata\\install\\strata-iq3_s.log",
+  "lib_dirs": [],
+  "port": 18500,
+  "gpu": 0,
+  "gpus_asked": true,
+  "vision": {
+    "exe": "C:\\Users\\Norikae\\AppData\\Local\\Strata\\components\\engine\\0.1.50-windows-x86_64-cuda-cuda13\\strata-vision.exe",
+    "mmproj": "C:\\Users\\Norikae\\Documents\\Strata\\models\\mmproj-Qwen3.8-Flash-Next-BF16.gguf",
+    "model": "C:\\Users\\Norikae\\Documents\\Strata\\models\\IQ3_S\\Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00001-of-00002.gguf",
+    "gpu": false,
+    "max_tokens": 300,
+    "threads": 6
+  },
+  "vram_reserve_mib": 1536,
+  "ui_reserve_applied": 1536,
+  "ui_resource_baseline": {
+    "workers": 0,
+    "reserve": 0,
+    "ramBudget": false,
+    "ramHeadroom": false
+  },
+  "ui_resource_profile": "performance",
+  "ui_vision_enabled": true,
+  "ui_vision_device": "yes",
+  "mcp_servers": {
+    "blender": {
+      "command": "C:\\Users\\Norikae\\.local\\bin\\uvx.exe",
+      "args": [
+        "mcp-for-blender"
+      ]
+    }
+  },
+  "args_written": [
+    "--pack",
+    "C:\\Users\\Norikae\\Documents\\Strata\\packs\\iq3_s",
+    "--native",
+    "C:\\Users\\Norikae\\Documents\\Strata\\models\\IQ3_S\\Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00001-of-00002.gguf",
+    "--ple-gguf",
+    "C:\\Users\\Norikae\\Documents\\Strata\\models\\IQ3_S\\Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00002-of-00002.gguf",
+    "--expert-profile",
+    "C:\\Users\\Norikae\\AppData\\Local\\Programs\\Strata\\control\\data\\expert-profile.bin",
+    "--expert-cache",
+    "auto",
+    "--prefill",
+    "auto",
+    "--spec",
+    "4",
+    "--spec-min-p",
+    "0.5",
+    "--mtp",
+    "C:\\Users\\Norikae\\Documents\\Strata\\mtp\\rt",
+    "--max-context",
+    "65536",
+    "--kv",
+    "int8",
+    "--vision",
+    "--vram-reserve-mib",
+    "1536"
+  ],
+  "host": "127.0.0.1",
+  "open_browser": false,
+  "drafting": "auto",
+  "mcp": {},
+  "fit_max_tokens": true,
+  "aliases": [
+    "iq3_s"
+  ],
+  "api_key": "1221e3959b83d91a9b6dc3b7fd54e7b62471a0a29471e87b51b24e5bb8787e54"
+}

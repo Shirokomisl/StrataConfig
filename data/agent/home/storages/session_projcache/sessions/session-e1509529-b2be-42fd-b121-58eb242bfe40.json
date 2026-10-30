@@ -1,0 +1,284 @@
+{
+  "version": 7,
+  "record": {
+    "identity": {
+      "formatVersion": 4,
+      "createdAt": 1792993463341,
+      "cwd": "C:\\Users\\Norikae\\Documents\\Strata\\Workspace",
+      "isSeeded": false,
+      "inheritedEventCount": 0
+    },
+    "rows": {
+      "title": {
+        "ver": 1,
+        "seq": 505,
+        "val": "Earlier in this conversation, before"
+      },
+      "titleInput": {
+        "ver": 3,
+        "seq": 505,
+        "val": {
+          "first": {
+            "seq": 10,
+            "text": "Earlier in this conversation, before you were given tools:\nuser: найди файл конфигурации Strata на этом ПК\nassistant: Поиск по всему профилю занял слишком долго — сужаю область поиска.В папке Documents\\Strata только модели и данные — файла настроек там нет. Ищу конфигурацию приложения в типовых местах.Нашёл четыре папки Strata — смотрю, в какой из них файл настроек.Нашёл. У Strata нет одного универсального файла — конфигурация разложена по четырём местам; главный файл — `app-settings.json`.\n\n**1. Главный конфиг приложения**\n`C:\\Users\\Norikae\\AppData\\Local\\Strata\\app-settings.json`\n```json\n{ \"data_dir\": \"C:\\\\Users\\\\Norikae\\\\Documents\\\\Strata\",\n  \"installs\": [\"C:\\\\Users\\\\Norikae\\\\AppData\\\\Local\\\\Strata\\\\install\"] }\n```\nЗадаёт папку данных (модели, паки, MTP) и каталог установок.\n\n**2. Конфиги запуска моделей** — `C:\\Users\\Norikae\\AppData\\Local\\Strata\\install\\`\n- `strata-iq3_s.json` (обновлён сегодня в 13:44, есть `.bak`)\n- `strata-gyro-gyro-s.json` (обновлён 26.10 в 07:02, есть `.bak`)\n\nЗдесь основные параметры движка: `--max-context 32768`, `--kv int8`, `--spec 4` / `--spec-min-p 0.5`, `--vram-reserve-mib 1536`, `--mtp ...\\mtp\\rt`, `--vision`, профиль ресурсов `performance`, а также пути к GGUF, паку и токенизатору.\n\n**3. Активный запущенный экземпляр**\n`C:\\Users\\Norikae\\.strata\\data\\native-instances\\a34b2d6d-...json` — тот же набор параметров, но `port: 18500`, `host: 127.0.0.1`, алиас `iq3_s`. Внимание: в этом файле лежит открытый `api_key` — если вы куда-то этим файлом делитесь, ключ лучше считать скомпрометированным.\n\n**4. Профиль и состояние сессии**\n- `C:\\Users\\Norikae\\AppData\\Roaming\\…\nuser: можешь найти место интеграции MCP серверов со Strata\nassistant: Ищу точки интеграции MCP — в путях уже мелькали `.strata-mcp` и ключ `\"mcp\"`.Старые сообщения были кратко пересказаны, чтобы освободить место. Чат был заполнен на 59%.Нашёл код интеграции в самом приложении — читаю его.Интеграция идёт через агентный профиль. Уточняю, где хранится список серверов.Старые сообщения были кратко пересказаны, чтобы освободить место. Чат был заполнен на 60%.Интеграция MCP в Strata разведена по **двум слоям** — движок (llama.cpp/Strata engine) и агентный харнес (чат). Вот конкретные места на этом ПК.\n\n## 1. Движок: MCP-серверы модели\n- **Конфиг-слот:** `\"mcp_servers\"` (старое имя — `\"mcpServers\"`) в JSON экземпляра, активный файл —\n  `C:\\Users\\Norikae\\.strata\\data\\native-instances\\a34b2d6d-b57e-44c9-9fbe-34496ba8a85f.json`\n  Сейчас там только `\"mcp\": {}` (строка 87) — это **не список серверов**, а параметры: `timeout_s`, `max_rounds`, `max_result_chars`. Серверов нет.\n- **Валидация формата:** `...\\Programs\\Strata\\host\\server\\native-settings.mjs`, `validateMcpServers()` (стр. 59–74): до 30 записей; на сервер — `command`+`args`+`env`+`cwd` **или** `url`+`headers`, плюс `disabled`; секреты наружу маскируются (`publicMcpServers`).\n- **Чтение/запись из UI:** `host\\server\\native-control.mjs` (стр. 153–154 `settings()`/`save()`, стр. 242 параметры `mcp`, стр. 298 `mcpServers`), при сохранении пишется `path+'.bak'`.\n- **Сама реализация MCP в движке:** `C:\\Users\\Norikae\\AppData\\Local\\Strata\\install\\third_party\\llama.cpp\\tools\\server\\server-mcp.cpp` и `server…\n\nCurrent message:\nможешь дать подробный гайд по интеграции с mcp-for-blender который уже установлен и включен в Blender (C:\\Program Files\\Blender Foundation\\Blender 5.2)"
+          },
+          "count": 3,
+          "lastSeq": 404
+        }
+      },
+      "llmRetry": {
+        "ver": 1,
+        "seq": 505,
+        "val": {}
+      },
+      "sandboxMode": {
+        "ver": 1,
+        "seq": 505,
+        "val": "danger-full-access"
+      },
+      "goal": {
+        "ver": 6,
+        "seq": 505,
+        "val": {
+          "current": null,
+          "seenGoalIds": [],
+          "failure": null
+        }
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 505,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 221269,
+            "outputTokens": 39240,
+            "cacheReadTokens": 621127,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 3,
+            "step": 9,
+            "buckets": {
+              "uncachedInputTokens": 14385,
+              "outputTokens": 1,
+              "cacheReadTokens": 13310,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 5,
+        "seq": 505,
+        "val": {
+          "surfaceTokens": 19928,
+          "contextWindow": 32768,
+          "pressureTokens": 27695,
+          "sampledSurfaceTokens": 19919
+        }
+      },
+      "contextBreakdown": {
+        "ver": 6,
+        "seq": 505,
+        "val": {
+          "systems": [
+            {
+              "seq": 9,
+              "tokens": 394
+            }
+          ],
+          "surfaceTokens": 19928,
+          "breakdown": {
+            "systemTokens": 394,
+            "toolsTokens": 5821,
+            "messageTokens": 19534
+          }
+        }
+      },
+      "turnBoundary": {
+        "ver": 2,
+        "seq": 505,
+        "val": {
+          "openTurnStartSeq": null,
+          "lastStepStartSeq": 501,
+          "lastStepBoundary": {
+            "kind": "end",
+            "seq": 503
+          },
+          "lastTurn": 3
+        }
+      },
+      "inbox": {
+        "ver": 1,
+        "seq": 505,
+        "val": {
+          "next-turn": [],
+          "next-step": []
+        }
+      },
+      "sessionStats": {
+        "ver": 1,
+        "seq": 505,
+        "val": {
+          "turns": 3,
+          "steps": 48,
+          "llmMs": 1138146,
+          "toolMs": 315797,
+          "ttftMs": 267516,
+          "ttftSteps": 48,
+          "decodeMs": 870630,
+          "decodeTokens": 39240,
+          "lastTurn": 3,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "turnOutline": {
+        "ver": 2,
+        "seq": 505,
+        "val": {
+          "turns": [
+            {
+              "turn": 1,
+              "seq": 6,
+              "prompt": "Earlier in this conversation, before you were giv…",
+              "response": "Готово — всё проверено на вашей машине. Вот подробный гайд. # Интеграция MCP for Blender ↔ Strata ## Как это устроено B…"
+            },
+            {
+              "turn": 2,
+              "seq": 170,
+              "prompt": "можешь все настроить и протестировать",
+              "response": "Всё готово с моей стороны. Итог: ## ✅ Настроено В конфиг текущего экземпляра модели (`…\\.strata\\data\\native-instances\\2…"
+            },
+            {
+              "turn": 3,
+              "seq": 399,
+              "prompt": "вроде перезапустил. можешь проверить инструмент п…",
+              "response": "Перезапуск был (новая загрузка 20:59), но `mcpServers: null` — конфиг подхватился в новый файл экземпляра. Проверю ката…"
+            }
+          ],
+          "draft": ""
+        }
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 505,
+        "val": "standard"
+      },
+      "userQuestions": {
+        "ver": 2,
+        "seq": 505,
+        "val": {
+          "inheritedEventCount": 0,
+          "timed": false,
+          "questions": {
+            "active": [],
+            "settled": []
+          }
+        }
+      },
+      "permissions": {
+        "ver": 2,
+        "seq": 505,
+        "val": {
+          "preset": "strata-manual",
+          "sandbox": "danger-full-access",
+          "approval": "ask",
+          "seeded": true
+        }
+      },
+      "workingDirectory": {
+        "ver": 1,
+        "seq": 505,
+        "val": "C:\\Users\\Norikae\\Documents\\Strata\\Workspace"
+      },
+      "subagentCatalog": {
+        "ver": 6,
+        "seq": 505,
+        "val": {
+          "inheritedEventCount": 0
+        }
+      },
+      "subagentTiming": {
+        "ver": 3,
+        "seq": 505,
+        "val": {
+          "descriptorSeen": false,
+          "settledMs": 0
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 505,
+        "val": {}
+      },
+      "timeContext": {
+        "ver": 2,
+        "seq": 505,
+        "val": {
+          "lastMessageTime": 1793016864701,
+          "lastInjectionTime": 1793016730057,
+          "lastTurnInjectionTime": null
+        }
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 505,
+        "val": null
+      },
+      "plan": {
+        "ver": 3,
+        "seq": 505,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null,
+          "activeAtLastHeader": false
+        }
+      },
+      "subagentModelSelectionPolicy": {
+        "ver": 1,
+        "seq": 505,
+        "val": [
+          {
+            "provider": "strata-local",
+            "model": "iq3_s"
+          }
+        ]
+      },
+      "harnessDevLegacyPrompt": {
+        "ver": 1,
+        "seq": 505,
+        "val": {
+          "source": null,
+          "web": null
+        }
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 505,
+        "val": {
+          "lastUsed": {
+            "provider": "strata-local",
+            "model": "iq3_s",
+            "reasoningEffort": "medium"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 505,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1793016124938
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 505,
+        "val": null
+      }
+    }
+  }
+}

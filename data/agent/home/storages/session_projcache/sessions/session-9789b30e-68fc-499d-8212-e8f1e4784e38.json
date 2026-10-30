@@ -1,0 +1,272 @@
+{
+  "version": 7,
+  "record": {
+    "identity": {
+      "formatVersion": 4,
+      "createdAt": 1792959719997,
+      "cwd": "C:\\Users\\Norikae\\.config\\opencode",
+      "isSeeded": false,
+      "inheritedEventCount": 0
+    },
+    "rows": {
+      "title": {
+        "ver": 1,
+        "seq": 186,
+        "val": "можешь посмотреть поч"
+      },
+      "titleInput": {
+        "ver": 3,
+        "seq": 186,
+        "val": {
+          "first": {
+            "seq": 12,
+            "text": "можешь посмотреть почему у меня резко \"отупела\" модель и ее будто подменили с 80B на 8B"
+          },
+          "count": 1,
+          "lastSeq": 12
+        }
+      },
+      "llmRetry": {
+        "ver": 1,
+        "seq": 186,
+        "val": {}
+      },
+      "sandboxMode": {
+        "ver": 1,
+        "seq": 186,
+        "val": "danger-full-access"
+      },
+      "goal": {
+        "ver": 6,
+        "seq": 186,
+        "val": {
+          "current": null,
+          "seenGoalIds": [],
+          "failure": null
+        }
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 186,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 52012,
+            "outputTokens": 9611,
+            "cacheReadTokens": 161088,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 1,
+            "step": 15,
+            "buckets": {
+              "uncachedInputTokens": 2976,
+              "outputTokens": 1929,
+              "cacheReadTokens": 15105,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 5,
+        "seq": 186,
+        "val": {
+          "surfaceTokens": 10326,
+          "contextWindow": 32768,
+          "pressureTokens": 18081,
+          "sampledSurfaceTokens": 8841
+        }
+      },
+      "contextBreakdown": {
+        "ver": 6,
+        "seq": 186,
+        "val": {
+          "systems": [
+            {
+              "seq": 11,
+              "tokens": 395
+            }
+          ],
+          "surfaceTokens": 10326,
+          "breakdown": {
+            "systemTokens": 395,
+            "toolsTokens": 5821,
+            "messageTokens": 9931
+          }
+        }
+      },
+      "turnBoundary": {
+        "ver": 2,
+        "seq": 186,
+        "val": {
+          "openTurnStartSeq": null,
+          "lastStepStartSeq": 183,
+          "lastStepBoundary": {
+            "kind": "end",
+            "seq": 185
+          },
+          "lastTurn": 1
+        }
+      },
+      "inbox": {
+        "ver": 1,
+        "seq": 186,
+        "val": {
+          "next-turn": [],
+          "next-step": []
+        }
+      },
+      "sessionStats": {
+        "ver": 1,
+        "seq": 186,
+        "val": {
+          "turns": 1,
+          "steps": 15,
+          "llmMs": 255966,
+          "toolMs": 106742,
+          "ttftMs": 67578,
+          "ttftSteps": 15,
+          "decodeMs": 188388,
+          "decodeTokens": 9611,
+          "lastTurn": 1,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "turnOutline": {
+        "ver": 2,
+        "seq": 186,
+        "val": {
+          "turns": [
+            {
+              "turn": 1,
+              "seq": 8,
+              "prompt": "можешь посмотреть почему у меня резко \"отупела\" м…",
+              "response": "Модель никто не подменял — она и сейчас настоящая, 80B. Проблема в другом: **Ollama молча обрезает каждый ваш запрос до…"
+            }
+          ],
+          "draft": ""
+        }
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 186,
+        "val": "standard"
+      },
+      "userQuestions": {
+        "ver": 2,
+        "seq": 186,
+        "val": {
+          "inheritedEventCount": 0,
+          "timed": false,
+          "questions": {
+            "active": [],
+            "settled": []
+          }
+        }
+      },
+      "permissions": {
+        "ver": 2,
+        "seq": 186,
+        "val": {
+          "preset": "strata-manual",
+          "sandbox": "danger-full-access",
+          "approval": "ask",
+          "seeded": false
+        }
+      },
+      "workingDirectory": {
+        "ver": 1,
+        "seq": 186,
+        "val": "C:\\Users\\Norikae\\.config\\opencode"
+      },
+      "subagentCatalog": {
+        "ver": 6,
+        "seq": 186,
+        "val": {
+          "inheritedEventCount": 0
+        }
+      },
+      "subagentTiming": {
+        "ver": 3,
+        "seq": 186,
+        "val": {
+          "descriptorSeen": false,
+          "settledMs": 0
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 186,
+        "val": {}
+      },
+      "timeContext": {
+        "ver": 2,
+        "seq": 186,
+        "val": {
+          "lastMessageTime": 1792960195717,
+          "lastInjectionTime": 1792959720241,
+          "lastTurnInjectionTime": null
+        }
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 186,
+        "val": null
+      },
+      "plan": {
+        "ver": 3,
+        "seq": 186,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null,
+          "activeAtLastHeader": false
+        }
+      },
+      "subagentModelSelectionPolicy": {
+        "ver": 1,
+        "seq": 186,
+        "val": [
+          {
+            "provider": "strata-local",
+            "model": "gyro-gyro-s"
+          }
+        ]
+      },
+      "harnessDevLegacyPrompt": {
+        "ver": 1,
+        "seq": 186,
+        "val": {
+          "source": null,
+          "web": null
+        }
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 186,
+        "val": {
+          "lastUsed": {
+            "provider": "strata-local",
+            "model": "gyro-gyro-s",
+            "reasoningEffort": "medium"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 186,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1792959720240
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 186,
+        "val": null
+      }
+    }
+  }
+}

@@ -1,0 +1,261 @@
+{
+  "version": 7,
+  "record": {
+    "identity": {
+      "formatVersion": 4,
+      "createdAt": 1793284986727,
+      "cwd": "C:\\Users\\Norikae\\Documents\\Strata\\Workspace",
+      "isSeeded": false,
+      "inheritedEventCount": 0
+    },
+    "rows": {
+      "title": {
+        "ver": 1,
+        "seq": 19,
+        "val": "можешь изучить проект"
+      },
+      "titleInput": {
+        "ver": 3,
+        "seq": 19,
+        "val": {
+          "first": {
+            "seq": 10,
+            "text": "можешь изучить проект и адаптировать его чтобы он использовал Strata. убери все упоминания Ollama/AIRI и других инструментов и полностью адаптируй проект под работу с Strata"
+          },
+          "count": 1,
+          "lastSeq": 10
+        }
+      },
+      "llmRetry": {
+        "ver": 1,
+        "seq": 19,
+        "val": {}
+      },
+      "sandboxMode": {
+        "ver": 1,
+        "seq": 19,
+        "val": "danger-full-access"
+      },
+      "goal": {
+        "ver": 6,
+        "seq": 19,
+        "val": {
+          "current": null,
+          "seenGoalIds": [],
+          "failure": null
+        }
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 19,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 0,
+            "outputTokens": 0,
+            "cacheReadTokens": 0,
+            "cacheWriteTokens": 0
+          },
+          "last": null
+        }
+      },
+      "contextPressure": {
+        "ver": 5,
+        "seq": 19,
+        "val": {
+          "surfaceTokens": 844,
+          "contextWindow": 32768
+        }
+      },
+      "contextBreakdown": {
+        "ver": 6,
+        "seq": 19,
+        "val": {
+          "systems": [
+            {
+              "seq": 9,
+              "tokens": 394
+            }
+          ],
+          "surfaceTokens": 844,
+          "breakdown": {
+            "systemTokens": 394,
+            "toolsTokens": 9969,
+            "messageTokens": 450
+          }
+        }
+      },
+      "turnBoundary": {
+        "ver": 2,
+        "seq": 19,
+        "val": {
+          "openTurnStartSeq": null,
+          "lastStepStartSeq": 8,
+          "lastStepBoundary": {
+            "kind": "end",
+            "seq": 18
+          },
+          "lastTurn": 1
+        }
+      },
+      "inbox": {
+        "ver": 1,
+        "seq": 19,
+        "val": {
+          "next-turn": [],
+          "next-step": []
+        }
+      },
+      "sessionStats": {
+        "ver": 1,
+        "seq": 19,
+        "val": {
+          "turns": 1,
+          "steps": 1,
+          "llmMs": 0,
+          "toolMs": 0,
+          "ttftMs": 0,
+          "ttftSteps": 0,
+          "decodeMs": 0,
+          "decodeTokens": 0,
+          "lastTurn": 1,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "turnOutline": {
+        "ver": 2,
+        "seq": 19,
+        "val": {
+          "turns": [
+            {
+              "turn": 1,
+              "seq": 6,
+              "prompt": "можешь изучить проект и адаптировать его чтобы он…",
+              "response": ""
+            }
+          ],
+          "draft": ""
+        }
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 19,
+        "val": "standard"
+      },
+      "userQuestions": {
+        "ver": 2,
+        "seq": 19,
+        "val": {
+          "inheritedEventCount": 0,
+          "timed": false,
+          "questions": {
+            "active": [],
+            "settled": []
+          }
+        }
+      },
+      "permissions": {
+        "ver": 2,
+        "seq": 19,
+        "val": {
+          "preset": "strata-manual",
+          "sandbox": "danger-full-access",
+          "approval": "ask",
+          "seeded": false
+        }
+      },
+      "workingDirectory": {
+        "ver": 1,
+        "seq": 19,
+        "val": "C:\\Users\\Norikae\\Documents\\Strata\\Workspace"
+      },
+      "subagentCatalog": {
+        "ver": 6,
+        "seq": 19,
+        "val": {
+          "inheritedEventCount": 0
+        }
+      },
+      "subagentTiming": {
+        "ver": 3,
+        "seq": 19,
+        "val": {
+          "descriptorSeen": false,
+          "settledMs": 0
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 19,
+        "val": {}
+      },
+      "timeContext": {
+        "ver": 2,
+        "seq": 19,
+        "val": {
+          "lastMessageTime": 1793284986848,
+          "lastInjectionTime": 1793284986848,
+          "lastTurnInjectionTime": null
+        }
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 19,
+        "val": null
+      },
+      "plan": {
+        "ver": 3,
+        "seq": 19,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null,
+          "activeAtLastHeader": false
+        }
+      },
+      "subagentModelSelectionPolicy": {
+        "ver": 1,
+        "seq": 19,
+        "val": [
+          {
+            "provider": "strata-local",
+            "model": "iq3_s"
+          }
+        ]
+      },
+      "harnessDevLegacyPrompt": {
+        "ver": 1,
+        "seq": 19,
+        "val": {
+          "source": null,
+          "web": null
+        }
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 19,
+        "val": {
+          "lastUsed": {
+            "provider": "strata-local",
+            "model": "iq3_s",
+            "reasoningEffort": "medium"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 19,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1793284986848
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 19,
+        "val": null
+      }
+    }
+  }
+}

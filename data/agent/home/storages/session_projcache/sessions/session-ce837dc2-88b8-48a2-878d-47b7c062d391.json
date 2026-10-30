@@ -1,0 +1,272 @@
+{
+  "version": 7,
+  "record": {
+    "identity": {
+      "formatVersion": 4,
+      "createdAt": 1793270306402,
+      "cwd": "C:\\Users\\Norikae\\riko_project",
+      "isSeeded": false,
+      "inheritedEventCount": 0
+    },
+    "rows": {
+      "title": {
+        "ver": 1,
+        "seq": 206,
+        "val": "можешь изучить проект"
+      },
+      "titleInput": {
+        "ver": 3,
+        "seq": 206,
+        "val": {
+          "first": {
+            "seq": 12,
+            "text": "можешь изучить проект и узнать почему у меня персонаж говорит по-китайски"
+          },
+          "count": 1,
+          "lastSeq": 12
+        }
+      },
+      "llmRetry": {
+        "ver": 1,
+        "seq": 206,
+        "val": {}
+      },
+      "sandboxMode": {
+        "ver": 1,
+        "seq": 206,
+        "val": "danger-full-access"
+      },
+      "goal": {
+        "ver": 6,
+        "seq": 206,
+        "val": {
+          "current": null,
+          "seenGoalIds": [],
+          "failure": null
+        }
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 206,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 73442,
+            "outputTokens": 6779,
+            "cacheReadTokens": 244174,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 1,
+            "step": 18,
+            "buckets": {
+              "uncachedInputTokens": 8630,
+              "outputTokens": 145,
+              "cacheReadTokens": 17186,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 5,
+        "seq": 206,
+        "val": {
+          "surfaceTokens": 10342,
+          "contextWindow": 32768,
+          "pressureTokens": 25816,
+          "sampledSurfaceTokens": 10198
+        }
+      },
+      "contextBreakdown": {
+        "ver": 6,
+        "seq": 206,
+        "val": {
+          "systems": [
+            {
+              "seq": 11,
+              "tokens": 394
+            }
+          ],
+          "surfaceTokens": 10342,
+          "breakdown": {
+            "systemTokens": 394,
+            "toolsTokens": 9969,
+            "messageTokens": 9948
+          }
+        }
+      },
+      "turnBoundary": {
+        "ver": 2,
+        "seq": 206,
+        "val": {
+          "openTurnStartSeq": null,
+          "lastStepStartSeq": 203,
+          "lastStepBoundary": {
+            "kind": "end",
+            "seq": 205
+          },
+          "lastTurn": 1
+        }
+      },
+      "inbox": {
+        "ver": 1,
+        "seq": 206,
+        "val": {
+          "next-turn": [],
+          "next-step": []
+        }
+      },
+      "sessionStats": {
+        "ver": 1,
+        "seq": 206,
+        "val": {
+          "turns": 1,
+          "steps": 18,
+          "llmMs": 239668,
+          "toolMs": 318823,
+          "ttftMs": 93640,
+          "ttftSteps": 18,
+          "decodeMs": 146028,
+          "decodeTokens": 6779,
+          "lastTurn": 1,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "turnOutline": {
+        "ver": 2,
+        "seq": 206,
+        "val": {
+          "turns": [
+            {
+              "turn": 1,
+              "seq": 8,
+              "prompt": "можешь изучить проект и узнать почему у меня перс…",
+              "response": ""
+            }
+          ],
+          "draft": ""
+        }
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 206,
+        "val": "standard"
+      },
+      "userQuestions": {
+        "ver": 2,
+        "seq": 206,
+        "val": {
+          "inheritedEventCount": 0,
+          "timed": false,
+          "questions": {
+            "active": [],
+            "settled": []
+          }
+        }
+      },
+      "permissions": {
+        "ver": 2,
+        "seq": 206,
+        "val": {
+          "preset": "strata-bypass",
+          "sandbox": "danger-full-access",
+          "approval": "never",
+          "seeded": false
+        }
+      },
+      "workingDirectory": {
+        "ver": 1,
+        "seq": 206,
+        "val": "C:\\Users\\Norikae\\riko_project"
+      },
+      "subagentCatalog": {
+        "ver": 6,
+        "seq": 206,
+        "val": {
+          "inheritedEventCount": 0
+        }
+      },
+      "subagentTiming": {
+        "ver": 3,
+        "seq": 206,
+        "val": {
+          "descriptorSeen": false,
+          "settledMs": 0
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 206,
+        "val": {}
+      },
+      "timeContext": {
+        "ver": 2,
+        "seq": 206,
+        "val": {
+          "lastMessageTime": 1793271195775,
+          "lastInjectionTime": 1793270965957,
+          "lastTurnInjectionTime": null
+        }
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 206,
+        "val": null
+      },
+      "plan": {
+        "ver": 3,
+        "seq": 206,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null,
+          "activeAtLastHeader": false
+        }
+      },
+      "subagentModelSelectionPolicy": {
+        "ver": 1,
+        "seq": 206,
+        "val": [
+          {
+            "provider": "strata-local",
+            "model": "iq3_s"
+          }
+        ]
+      },
+      "harnessDevLegacyPrompt": {
+        "ver": 1,
+        "seq": 206,
+        "val": {
+          "source": null,
+          "web": null
+        }
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 206,
+        "val": {
+          "lastUsed": {
+            "provider": "strata-local",
+            "model": "iq3_s",
+            "reasoningEffort": "medium"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 206,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1793270306666
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 206,
+        "val": null
+      }
+    }
+  }
+}

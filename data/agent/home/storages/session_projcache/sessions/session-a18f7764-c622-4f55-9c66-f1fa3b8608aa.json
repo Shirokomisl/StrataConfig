@@ -1,0 +1,272 @@
+{
+  "version": 7,
+  "record": {
+    "identity": {
+      "formatVersion": 4,
+      "createdAt": 1792965767949,
+      "cwd": "C:\\Users\\Norikae\\riko_project",
+      "isSeeded": false,
+      "inheritedEventCount": 0
+    },
+    "rows": {
+      "title": {
+        "ver": 1,
+        "seq": 229,
+        "val": "можешь проанализиров"
+      },
+      "titleInput": {
+        "ver": 3,
+        "seq": 229,
+        "val": {
+          "first": {
+            "seq": 12,
+            "text": "можешь проанализировать проект в папке и переписать его так, чтобы он интегрировался с Strata вместо Ollama"
+          },
+          "count": 1,
+          "lastSeq": 12
+        }
+      },
+      "llmRetry": {
+        "ver": 1,
+        "seq": 229,
+        "val": {}
+      },
+      "sandboxMode": {
+        "ver": 1,
+        "seq": 229,
+        "val": "danger-full-access"
+      },
+      "goal": {
+        "ver": 6,
+        "seq": 229,
+        "val": {
+          "current": null,
+          "seenGoalIds": [],
+          "failure": null
+        }
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 229,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 39711,
+            "outputTokens": 8984,
+            "cacheReadTokens": 386789,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 1,
+            "step": 28,
+            "buckets": {
+              "uncachedInputTokens": 74,
+              "outputTokens": 825,
+              "cacheReadTokens": 18623,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 5,
+        "seq": 229,
+        "val": {
+          "surfaceTokens": 11465,
+          "contextWindow": 32768,
+          "pressureTokens": 18697,
+          "sampledSurfaceTokens": 10782
+        }
+      },
+      "contextBreakdown": {
+        "ver": 6,
+        "seq": 229,
+        "val": {
+          "systems": [
+            {
+              "seq": 11,
+              "tokens": 395
+            }
+          ],
+          "surfaceTokens": 11465,
+          "breakdown": {
+            "systemTokens": 395,
+            "toolsTokens": 5821,
+            "messageTokens": 11070
+          }
+        }
+      },
+      "turnBoundary": {
+        "ver": 2,
+        "seq": 229,
+        "val": {
+          "openTurnStartSeq": null,
+          "lastStepStartSeq": 225,
+          "lastStepBoundary": {
+            "kind": "end",
+            "seq": 227
+          },
+          "lastTurn": 1
+        }
+      },
+      "inbox": {
+        "ver": 1,
+        "seq": 229,
+        "val": {
+          "next-turn": [],
+          "next-step": []
+        }
+      },
+      "sessionStats": {
+        "ver": 1,
+        "seq": 229,
+        "val": {
+          "turns": 1,
+          "steps": 28,
+          "llmMs": 219979,
+          "toolMs": 100316,
+          "ttftMs": 62110,
+          "ttftSteps": 28,
+          "decodeMs": 157869,
+          "decodeTokens": 8984,
+          "lastTurn": 1,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "turnOutline": {
+        "ver": 2,
+        "seq": 229,
+        "val": {
+          "turns": [
+            {
+              "turn": 1,
+              "seq": 8,
+              "prompt": "можешь проанализировать проект в папке и переписа…",
+              "response": "Готово — проект переписан под Strata. Ollama больше нигде не упоминается; проверил синтаксис, парсинг YAML и поведение…"
+            }
+          ],
+          "draft": ""
+        }
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 229,
+        "val": "standard"
+      },
+      "userQuestions": {
+        "ver": 2,
+        "seq": 229,
+        "val": {
+          "inheritedEventCount": 0,
+          "timed": false,
+          "questions": {
+            "active": [],
+            "settled": []
+          }
+        }
+      },
+      "permissions": {
+        "ver": 2,
+        "seq": 229,
+        "val": {
+          "preset": "strata-manual",
+          "sandbox": "danger-full-access",
+          "approval": "ask",
+          "seeded": false
+        }
+      },
+      "workingDirectory": {
+        "ver": 1,
+        "seq": 229,
+        "val": "C:\\Users\\Norikae\\riko_project"
+      },
+      "subagentCatalog": {
+        "ver": 6,
+        "seq": 229,
+        "val": {
+          "inheritedEventCount": 0
+        }
+      },
+      "subagentTiming": {
+        "ver": 3,
+        "seq": 229,
+        "val": {
+          "descriptorSeen": false,
+          "settledMs": 0
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 229,
+        "val": {}
+      },
+      "timeContext": {
+        "ver": 2,
+        "seq": 229,
+        "val": {
+          "lastMessageTime": 1792966151401,
+          "lastInjectionTime": 1792965768081,
+          "lastTurnInjectionTime": null
+        }
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 229,
+        "val": null
+      },
+      "plan": {
+        "ver": 3,
+        "seq": 229,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null,
+          "activeAtLastHeader": false
+        }
+      },
+      "subagentModelSelectionPolicy": {
+        "ver": 1,
+        "seq": 229,
+        "val": [
+          {
+            "provider": "strata-local",
+            "model": "gyro-gyro-s"
+          }
+        ]
+      },
+      "harnessDevLegacyPrompt": {
+        "ver": 1,
+        "seq": 229,
+        "val": {
+          "source": null,
+          "web": null
+        }
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 229,
+        "val": {
+          "lastUsed": {
+            "provider": "strata-local",
+            "model": "gyro-gyro-s",
+            "reasoningEffort": "medium"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 229,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1792965768080
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 229,
+        "val": null
+      }
+    }
+  }
+}

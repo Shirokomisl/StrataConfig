@@ -1,0 +1,272 @@
+{
+  "version": 7,
+  "record": {
+    "identity": {
+      "formatVersion": 4,
+      "createdAt": 1793285161341,
+      "cwd": "C:\\Users\\Norikae\\Documents\\Strata\\Workspace",
+      "isSeeded": false,
+      "inheritedEventCount": 0
+    },
+    "rows": {
+      "title": {
+        "ver": 1,
+        "seq": 93,
+        "val": "можешь изучить проект"
+      },
+      "titleInput": {
+        "ver": 3,
+        "seq": 93,
+        "val": {
+          "first": {
+            "seq": 12,
+            "text": "можешь изучить проект и адаптировать его чтобы он использовал Strata. убери все упоминания Ollama/AIRI и других инструментов и полностью адаптируй проект под работу с Strata"
+          },
+          "count": 1,
+          "lastSeq": 12
+        }
+      },
+      "llmRetry": {
+        "ver": 1,
+        "seq": 93,
+        "val": {}
+      },
+      "sandboxMode": {
+        "ver": 1,
+        "seq": 93,
+        "val": "danger-full-access"
+      },
+      "goal": {
+        "ver": 6,
+        "seq": 93,
+        "val": {
+          "current": null,
+          "seenGoalIds": [],
+          "failure": null
+        }
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 93,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 17550,
+            "outputTokens": 1862,
+            "cacheReadTokens": 106050,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 1,
+            "step": 8,
+            "buckets": {
+              "uncachedInputTokens": 1296,
+              "outputTokens": 234,
+              "cacheReadTokens": 17591,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 5,
+        "seq": 93,
+        "val": {
+          "surfaceTokens": 9133,
+          "contextWindow": 65536,
+          "pressureTokens": 18887,
+          "sampledSurfaceTokens": 6124
+        }
+      },
+      "contextBreakdown": {
+        "ver": 6,
+        "seq": 93,
+        "val": {
+          "systems": [
+            {
+              "seq": 11,
+              "tokens": 394
+            }
+          ],
+          "surfaceTokens": 9133,
+          "breakdown": {
+            "systemTokens": 394,
+            "toolsTokens": 9969,
+            "messageTokens": 8739
+          }
+        }
+      },
+      "turnBoundary": {
+        "ver": 2,
+        "seq": 93,
+        "val": {
+          "openTurnStartSeq": null,
+          "lastStepStartSeq": 90,
+          "lastStepBoundary": {
+            "kind": "end",
+            "seq": 92
+          },
+          "lastTurn": 1
+        }
+      },
+      "inbox": {
+        "ver": 1,
+        "seq": 93,
+        "val": {
+          "next-turn": [],
+          "next-step": []
+        }
+      },
+      "sessionStats": {
+        "ver": 1,
+        "seq": 93,
+        "val": {
+          "turns": 1,
+          "steps": 9,
+          "llmMs": 52943,
+          "toolMs": 24201,
+          "ttftMs": 25651,
+          "ttftSteps": 8,
+          "decodeMs": 27292,
+          "decodeTokens": 1862,
+          "lastTurn": 1,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "turnOutline": {
+        "ver": 2,
+        "seq": 93,
+        "val": {
+          "turns": [
+            {
+              "turn": 1,
+              "seq": 8,
+              "prompt": "можешь изучить проект и адаптировать его чтобы он…",
+              "response": "Посмотрю вспомогательные файлы, чтобы понять контекст."
+            }
+          ],
+          "draft": ""
+        }
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 93,
+        "val": "standard"
+      },
+      "userQuestions": {
+        "ver": 2,
+        "seq": 93,
+        "val": {
+          "inheritedEventCount": 0,
+          "timed": false,
+          "questions": {
+            "active": [],
+            "settled": []
+          }
+        }
+      },
+      "permissions": {
+        "ver": 2,
+        "seq": 93,
+        "val": {
+          "preset": "strata-manual",
+          "sandbox": "danger-full-access",
+          "approval": "ask",
+          "seeded": false
+        }
+      },
+      "workingDirectory": {
+        "ver": 1,
+        "seq": 93,
+        "val": "C:\\Users\\Norikae\\Documents\\Strata\\Workspace"
+      },
+      "subagentCatalog": {
+        "ver": 6,
+        "seq": 93,
+        "val": {
+          "inheritedEventCount": 0
+        }
+      },
+      "subagentTiming": {
+        "ver": 3,
+        "seq": 93,
+        "val": {
+          "descriptorSeen": false,
+          "settledMs": 0
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 93,
+        "val": {}
+      },
+      "timeContext": {
+        "ver": 2,
+        "seq": 93,
+        "val": {
+          "lastMessageTime": 1793285238742,
+          "lastInjectionTime": 1793285161554,
+          "lastTurnInjectionTime": null
+        }
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 93,
+        "val": null
+      },
+      "plan": {
+        "ver": 3,
+        "seq": 93,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null,
+          "activeAtLastHeader": false
+        }
+      },
+      "subagentModelSelectionPolicy": {
+        "ver": 1,
+        "seq": 93,
+        "val": [
+          {
+            "provider": "strata-local",
+            "model": "iq3_s"
+          }
+        ]
+      },
+      "harnessDevLegacyPrompt": {
+        "ver": 1,
+        "seq": 93,
+        "val": {
+          "source": null,
+          "web": null
+        }
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 93,
+        "val": {
+          "lastUsed": {
+            "provider": "strata-local",
+            "model": "iq3_s",
+            "reasoningEffort": "medium"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 93,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1793285161552
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 93,
+        "val": null
+      }
+    }
+  }
+}

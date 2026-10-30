@@ -1,0 +1,272 @@
+{
+  "version": 7,
+  "record": {
+    "identity": {
+      "formatVersion": 4,
+      "createdAt": 1793016881074,
+      "cwd": "C:\\Users\\Norikae\\Documents\\Strata\\Workspace",
+      "isSeeded": false,
+      "inheritedEventCount": 0
+    },
+    "rows": {
+      "title": {
+        "ver": 1,
+        "seq": 287,
+        "val": "Earlier in this conversation, before"
+      },
+      "titleInput": {
+        "ver": 3,
+        "seq": 287,
+        "val": {
+          "first": {
+            "seq": 10,
+            "text": "Earlier in this conversation, before you were given tools:\nuser: найди файл конфигурации Strata на этом ПК\nassistant: Поиск по всему профилю занял слишком долго — сужаю область поиска.В папке Documents\\Strata только модели и данные — файла настроек там нет. Ищу конфигурацию приложения в типовых местах.Нашёл четыре папки Strata — смотрю, в какой из них файл настроек.Нашёл. У Strata нет одного универсального файла — конфигурация разложена по четырём местам; главный файл — `app-settings.json`.\n\n**1. Главный конфиг приложения**\n`C:\\Users\\Norikae\\AppData\\Local\\Strata\\app-settings.json`\n```json\n{ \"data_dir\": \"C:\\\\Users\\\\Norikae\\\\Documents\\\\Strata\",\n  \"installs\": [\"C:\\\\Users\\\\Norikae\\\\AppData\\\\Local\\\\Strata\\\\install\"] }\n```\nЗадаёт папку данных (модели, паки, MTP) и каталог установок.\n\n**2. Конфиги запуска моделей** — `C:\\Users\\Norikae\\AppData\\Local\\Strata\\install\\`\n- `strata-iq3_s.json` (обновлён сегодня в 13:44, есть `.bak`)\n- `strata-gyro-gyro-s.json` (обновлён 26.10 в 07:02, есть `.bak`)\n\nЗдесь основные параметры движка: `--max-context 32768`, `--kv int8`, `--spec 4` / `--spec-min-p 0.5`, `--vram-reserve-mib 1536`, `--mtp ...\\mtp\\rt`, `--vision`, профиль ресурсов `performance`, а также пути к GGUF, паку и токенизатору.\n\n**3. Активный запущенный экземпляр**\n`C:\\Users\\Norikae\\.strata\\data\\native-instances\\a34b2d6d-...json` — тот же набор параметров, но `port: 18500`, `host: 127.0.0.1`, алиас `iq3_s`. Внимание: в этом файле лежит открытый `api_key` — если вы куда-то этим файлом делитесь, ключ лучше считать скомпрометированным.\n\n**4. Профиль и состояние сессии**\n- `C:\\Users\\Norikae\\AppData\\Roaming\\…\nuser: можешь найти место интеграции MCP серверов со Strata\nassistant: Ищу точки интеграции MCP — в путях уже мелькали `.strata-mcp` и ключ `\"mcp\"`.Старые сообщения были кратко пересказаны, чтобы освободить место. Чат был заполнен на 59%.Нашёл код интеграции в самом приложении — читаю его.Интеграция идёт через агентный профиль. Уточняю, где хранится список серверов.Старые сообщения были кратко пересказаны, чтобы освободить место. Чат был заполнен на 60%.Интеграция MCP в Strata разведена по **двум слоям** — движок (llama.cpp/Strata engine) и агентный харнес (чат). Вот конкретные места на этом ПК.\n\n## 1. Движок: MCP-серверы модели\n- **Конфиг-слот:** `\"mcp_servers\"` (старое имя — `\"mcpServers\"`) в JSON экземпляра, активный файл —\n  `C:\\Users\\Norikae\\.strata\\data\\native-instances\\a34b2d6d-b57e-44c9-9fbe-34496ba8a85f.json`\n  Сейчас там только `\"mcp\": {}` (строка 87) — это **не список серверов**, а параметры: `timeout_s`, `max_rounds`, `max_result_chars`. Серверов нет.\n- **Валидация формата:** `...\\Programs\\Strata\\host\\server\\native-settings.mjs`, `validateMcpServers()` (стр. 59–74): до 30 записей; на сервер — `command`+`args`+`env`+`cwd` **или** `url`+`headers`, плюс `disabled`; секреты наружу маскируются (`publicMcpServers`).\n- **Чтение/запись из UI:** `host\\server\\native-control.mjs` (стр. 153–154 `settings()`/`save()`, стр. 242 параметры `mcp`, стр. 298 `mcpServers`), при сохранении пишется `path+'.bak'`.\n- **Сама реализация MCP в движке:** `C:\\Users\\Norikae\\AppData\\Local\\Strata\\install\\third_party\\llama.cpp\\tools\\server\\server-mcp.cpp` и `server…\nuser: можешь дать подробный гайд по интеграции с mcp-for-blender который уже установлен и включен в Blender (C:\\Program Files\\Blender Foundation\\Blender 5.2)\nassistant: Старые сообщения были кратко пересказаны, чтобы освободить место. Чат был заполнен на 59%.Картина почти полная: агент поддерживает и stdio, и streamable-http. Последний штрих — как серверы передаются движку llama.cpp при запуске.Старые сообщения были кратко пересказаны, чтобы освободить место. Чат был заполнен на 61%.Сторона Blender подтверждена. Теперь соберу последние факты: точные переменные окружения моста, путь к `uvx` и прослушивается ли прямо сейчас порт 9876.Blender в данный момент действительно прослушивает 9876. Сейчас я уточню точные имена переменных окружения моста из исходного кода.Старые сообщения были кратко пересказаны, чтобы освободить место. Чат был заполнен на 70%.Готово — всё проверено на вашей машине. Вот подробный гайд.\n\n# Интеграция MCP for Blender ↔ Strata\n\n## Как это устроено\n\nBlender-дополнение **не** говорит по протоколу MCP — оно поднимает простой TCP-сервер на `127.0.0.1:9876` (JSON построчно). Между ним и Strata стоит **мост-пакет** `mcp-for-blender` (бывший `blender-mcp`): это обычный stdio-MCP-сервер, который Strata запускает как дочерний процесс, а мост уже пересылает команды в Blender.\n\n```\nStrata (MCP-клиент) ⇄ stdio ⇄ uvx mcp-for-blender ⇄ TCP 127.0.0.1:9876 ⇄ дополнение в Blender\n```\n\n## Шаг 1. Сторона Blender — у вас уже готово ✅\n\n- Дополнение `blender_mcp.py` v1.8 установлено и включено, сервер **сейчас запущен** — порт 9876 слушается на 127.0.0.1 (проверил живой процесс).\n- Контроль: в 3D-вьюпорте нажмите **N** → вкладка **«MCP for Ble…\nuser: можешь все настроить и протестировать\nassistant: Blender жив (слушает 9876), а конфиг экземпляра — новый (`295143c7…`, порт 18500). Теперь посмотрю, как устроен перезапуск экземпляра, и параллельно запущу прямой тест моста.Старые сообщения были кратко пересказаны, чтобы освободить место. Чат был заполнен на 75%.Продолжаю: запускаю прямой тест моста в фоне и параллельно ищу механизм остановки/старта экземпляра.Мост тестится в фоне. Теперь найду, где хост-сервер Strata принимает команды управления экземплярами.Движок на 18500 работает (pid 7592), хост-сервер `index.mjs` — pid 9412. Посмотрю, где у хоста API и порт.Старые сообщения были кратко пересказаны, чтобы освободить место. Чат был заполнен на 59%.Тест моста 100% успешен. Теперь посмотрю точную форму API настроек экземпляра.Старые сообщения были кратко пересказаны, чтобы освободить место. Чат был заполнен на 67%.Механизм понятен: `PATCH /api/native/models/<модель>/settings` с полем `mcp` безопасно запишет конфиг (с бэкапом), перезапуск применяется при следующем старте модели. Проверю API хоста.Хост не отвечает на 8791 — проверю, на каком порту он сейчас слушает.Хост слушает порт 47831 (не 8791). Пробую его.Всё готово с моей стороны. Итог:\n\n## ✅ Настроено\nВ конфиг текущего экземпляра модели (`…\\.strata\\data\\native-instances\\295143c7-….json`) добавлен блок:\n\n```json\n\"mcp_servers\": {\n  \"blender\": {\n    \"command\": \"C:\\\\Users\\\\Norikae\\\\.local\\\\bin\\\\uvx.exe\",\n    \"args\": [\"mcp-for-blender\"]\n  }\n}\n```\n\nХост прочитал файл и подтвердил валидность (`ok=True`; единственное предупр…\n\nCurrent message:\nвроде перезапустил. можешь проверить инструмент по своему усмотрению"
+          },
+          "count": 1,
+          "lastSeq": 10
+        }
+      },
+      "llmRetry": {
+        "ver": 1,
+        "seq": 287,
+        "val": {}
+      },
+      "sandboxMode": {
+        "ver": 1,
+        "seq": 287,
+        "val": "danger-full-access"
+      },
+      "goal": {
+        "ver": 6,
+        "seq": 287,
+        "val": {
+          "current": null,
+          "seenGoalIds": [],
+          "failure": null
+        }
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 287,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 83302,
+            "outputTokens": 10486,
+            "cacheReadTokens": 506789,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 1,
+            "step": 34,
+            "buckets": {
+              "uncachedInputTokens": 8618,
+              "outputTokens": 1773,
+              "cacheReadTokens": 16666,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 5,
+        "seq": 287,
+        "val": {
+          "surfaceTokens": 18894,
+          "contextWindow": 32768,
+          "pressureTokens": 25284,
+          "sampledSurfaceTokens": 17049
+        }
+      },
+      "contextBreakdown": {
+        "ver": 6,
+        "seq": 287,
+        "val": {
+          "systems": [
+            {
+              "seq": 9,
+              "tokens": 394
+            }
+          ],
+          "surfaceTokens": 18894,
+          "breakdown": {
+            "systemTokens": 394,
+            "toolsTokens": 5821,
+            "messageTokens": 18500
+          }
+        }
+      },
+      "turnBoundary": {
+        "ver": 2,
+        "seq": 287,
+        "val": {
+          "openTurnStartSeq": null,
+          "lastStepStartSeq": 284,
+          "lastStepBoundary": {
+            "kind": "end",
+            "seq": 286
+          },
+          "lastTurn": 1
+        }
+      },
+      "inbox": {
+        "ver": 1,
+        "seq": 287,
+        "val": {
+          "next-turn": [],
+          "next-step": []
+        }
+      },
+      "sessionStats": {
+        "ver": 1,
+        "seq": 287,
+        "val": {
+          "turns": 1,
+          "steps": 34,
+          "llmMs": 347128,
+          "toolMs": 142734,
+          "ttftMs": 112813,
+          "ttftSteps": 34,
+          "decodeMs": 234315,
+          "decodeTokens": 10486,
+          "lastTurn": 1,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "turnOutline": {
+        "ver": 2,
+        "seq": 287,
+        "val": {
+          "turns": [
+            {
+              "turn": 1,
+              "seq": 6,
+              "prompt": "Earlier in this conversation, before you were giv…",
+              "response": "Проверку закончил — вот полная картина. **Что сейчас работает:** - ✅ Настройка на месте: host API подтверждает, что для…"
+            }
+          ],
+          "draft": ""
+        }
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 287,
+        "val": "standard"
+      },
+      "userQuestions": {
+        "ver": 2,
+        "seq": 287,
+        "val": {
+          "inheritedEventCount": 0,
+          "timed": false,
+          "questions": {
+            "active": [],
+            "settled": []
+          }
+        }
+      },
+      "permissions": {
+        "ver": 2,
+        "seq": 287,
+        "val": {
+          "preset": "strata-manual",
+          "sandbox": "danger-full-access",
+          "approval": "ask",
+          "seeded": false
+        }
+      },
+      "workingDirectory": {
+        "ver": 1,
+        "seq": 287,
+        "val": "C:\\Users\\Norikae\\Documents\\Strata\\Workspace"
+      },
+      "subagentCatalog": {
+        "ver": 6,
+        "seq": 287,
+        "val": {
+          "inheritedEventCount": 0
+        }
+      },
+      "subagentTiming": {
+        "ver": 3,
+        "seq": 287,
+        "val": {
+          "descriptorSeen": false,
+          "settledMs": 0
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 287,
+        "val": {}
+      },
+      "timeContext": {
+        "ver": 2,
+        "seq": 287,
+        "val": {
+          "lastMessageTime": 1793017933494,
+          "lastInjectionTime": 1793017536652,
+          "lastTurnInjectionTime": null
+        }
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 287,
+        "val": null
+      },
+      "plan": {
+        "ver": 3,
+        "seq": 287,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null,
+          "activeAtLastHeader": false
+        }
+      },
+      "subagentModelSelectionPolicy": {
+        "ver": 1,
+        "seq": 287,
+        "val": [
+          {
+            "provider": "strata-local",
+            "model": "iq3_s"
+          }
+        ]
+      },
+      "harnessDevLegacyPrompt": {
+        "ver": 1,
+        "seq": 287,
+        "val": {
+          "source": null,
+          "web": null
+        }
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 287,
+        "val": {
+          "lastUsed": {
+            "provider": "strata-local",
+            "model": "iq3_s",
+            "reasoningEffort": "medium"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 287,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1793016881186
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 287,
+        "val": null
+      }
+    }
+  }
+}

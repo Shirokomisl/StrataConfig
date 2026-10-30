@@ -1,0 +1,278 @@
+{
+  "version": 7,
+  "record": {
+    "identity": {
+      "formatVersion": 4,
+      "createdAt": 1793285275806,
+      "cwd": "C:\\Users\\Norikae\\riko_project",
+      "isSeeded": false,
+      "inheritedEventCount": 0
+    },
+    "rows": {
+      "title": {
+        "ver": 1,
+        "seq": 1569,
+        "val": "можешь изучить проект"
+      },
+      "titleInput": {
+        "ver": 3,
+        "seq": 1569,
+        "val": {
+          "first": {
+            "seq": 10,
+            "text": "можешь изучить проект и адаптировать его чтобы он использовал Strata. убери все упоминания Ollama/AIRI и других инструментов и полностью адаптируй проект под работу с Strata"
+          },
+          "count": 2,
+          "lastSeq": 557
+        }
+      },
+      "llmRetry": {
+        "ver": 1,
+        "seq": 1569,
+        "val": {}
+      },
+      "sandboxMode": {
+        "ver": 1,
+        "seq": 1569,
+        "val": "danger-full-access"
+      },
+      "goal": {
+        "ver": 6,
+        "seq": 1569,
+        "val": {
+          "current": null,
+          "seenGoalIds": [],
+          "failure": null
+        }
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 1569,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 487376,
+            "outputTokens": 125285,
+            "cacheReadTokens": 4957582,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 2,
+            "step": 104,
+            "buckets": {
+              "uncachedInputTokens": 27597,
+              "outputTokens": 5538,
+              "cacheReadTokens": 30435,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 5,
+        "seq": 1569,
+        "val": {
+          "surfaceTokens": 40489,
+          "contextWindow": 65536,
+          "pressureTokens": 58032,
+          "sampledSurfaceTokens": 36040
+        }
+      },
+      "contextBreakdown": {
+        "ver": 6,
+        "seq": 1569,
+        "val": {
+          "systems": [
+            {
+              "seq": 9,
+              "tokens": 394
+            }
+          ],
+          "surfaceTokens": 40489,
+          "breakdown": {
+            "systemTokens": 394,
+            "toolsTokens": 9969,
+            "messageTokens": 40095
+          }
+        }
+      },
+      "turnBoundary": {
+        "ver": 2,
+        "seq": 1569,
+        "val": {
+          "openTurnStartSeq": null,
+          "lastStepStartSeq": 1557,
+          "lastStepBoundary": {
+            "kind": "end",
+            "seq": 1563
+          },
+          "lastTurn": 2
+        }
+      },
+      "inbox": {
+        "ver": 1,
+        "seq": 1569,
+        "val": {
+          "next-turn": [],
+          "next-step": []
+        }
+      },
+      "sessionStats": {
+        "ver": 1,
+        "seq": 1569,
+        "val": {
+          "turns": 2,
+          "steps": 170,
+          "llmMs": 3011658,
+          "toolMs": 1423850,
+          "ttftMs": 651418,
+          "ttftSteps": 170,
+          "decodeMs": 2360240,
+          "decodeTokens": 125285,
+          "lastTurn": 2,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "turnOutline": {
+        "ver": 2,
+        "seq": 1569,
+        "val": {
+          "turns": [
+            {
+              "turn": 1,
+              "seq": 6,
+              "prompt": "можешь изучить проект и адаптировать его чтобы он…",
+              "response": "Готово — проект полностью переведён на Strata. Что изменилось: **Конфигурация (character_config.yaml)** - `model: \"qwen…"
+            },
+            {
+              "turn": 2,
+              "seq": 554,
+              "prompt": "да хорошо, но SoVITS по какой-то причине генериру…",
+              "response": ""
+            }
+          ],
+          "draft": ""
+        }
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 1569,
+        "val": "standard"
+      },
+      "userQuestions": {
+        "ver": 2,
+        "seq": 1569,
+        "val": {
+          "inheritedEventCount": 0,
+          "timed": false,
+          "questions": {
+            "active": [],
+            "settled": []
+          }
+        }
+      },
+      "permissions": {
+        "ver": 2,
+        "seq": 1569,
+        "val": {
+          "preset": "strata-bypass",
+          "sandbox": "danger-full-access",
+          "approval": "never",
+          "seeded": true
+        }
+      },
+      "workingDirectory": {
+        "ver": 1,
+        "seq": 1569,
+        "val": "C:\\Users\\Norikae\\riko_project"
+      },
+      "subagentCatalog": {
+        "ver": 6,
+        "seq": 1569,
+        "val": {
+          "inheritedEventCount": 0
+        }
+      },
+      "subagentTiming": {
+        "ver": 3,
+        "seq": 1569,
+        "val": {
+          "descriptorSeen": false,
+          "settledMs": 0
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 1569,
+        "val": {}
+      },
+      "timeContext": {
+        "ver": 2,
+        "seq": 1569,
+        "val": {
+          "lastMessageTime": 1793292234249,
+          "lastInjectionTime": 1793291592308,
+          "lastTurnInjectionTime": null
+        }
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 1569,
+        "val": null
+      },
+      "plan": {
+        "ver": 3,
+        "seq": 1569,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null,
+          "activeAtLastHeader": false
+        }
+      },
+      "subagentModelSelectionPolicy": {
+        "ver": 1,
+        "seq": 1569,
+        "val": [
+          {
+            "provider": "strata-local",
+            "model": "iq3_s"
+          }
+        ]
+      },
+      "harnessDevLegacyPrompt": {
+        "ver": 1,
+        "seq": 1569,
+        "val": {
+          "source": null,
+          "web": null
+        }
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 1569,
+        "val": {
+          "lastUsed": {
+            "provider": "strata-local",
+            "model": "iq3_s",
+            "reasoningEffort": "medium"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 1569,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1793287131462
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 1569,
+        "val": null
+      }
+    }
+  }
+}

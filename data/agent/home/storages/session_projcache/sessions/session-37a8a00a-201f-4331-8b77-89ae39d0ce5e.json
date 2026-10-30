@@ -1,0 +1,284 @@
+{
+  "version": 7,
+  "record": {
+    "identity": {
+      "formatVersion": 4,
+      "createdAt": 1793271221362,
+      "cwd": "C:\\Users\\Norikae\\Documents\\Strata\\Workspace",
+      "isSeeded": false,
+      "inheritedEventCount": 0
+    },
+    "rows": {
+      "title": {
+        "ver": 1,
+        "seq": 563,
+        "val": "можешь изучить проект"
+      },
+      "titleInput": {
+        "ver": 3,
+        "seq": 563,
+        "val": {
+          "first": {
+            "seq": 17,
+            "text": "можешь изучить проект и узнать почему у меня персонаж говорит по-китайски"
+          },
+          "count": 3,
+          "lastSeq": 538
+        }
+      },
+      "llmRetry": {
+        "ver": 1,
+        "seq": 563,
+        "val": {}
+      },
+      "sandboxMode": {
+        "ver": 1,
+        "seq": 563,
+        "val": "danger-full-access"
+      },
+      "goal": {
+        "ver": 6,
+        "seq": 563,
+        "val": {
+          "current": null,
+          "seenGoalIds": [],
+          "failure": null
+        }
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 563,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 319994,
+            "outputTokens": 27036,
+            "cacheReadTokens": 804638,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 3,
+            "step": 3,
+            "buckets": {
+              "uncachedInputTokens": 20140,
+              "outputTokens": 1,
+              "cacheReadTokens": 10786,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 5,
+        "seq": 563,
+        "val": {
+          "surfaceTokens": 15905,
+          "contextWindow": 32768,
+          "pressureTokens": 30926,
+          "sampledSurfaceTokens": 15895
+        }
+      },
+      "contextBreakdown": {
+        "ver": 6,
+        "seq": 563,
+        "val": {
+          "systems": [
+            {
+              "seq": 15,
+              "tokens": 394
+            }
+          ],
+          "surfaceTokens": 15905,
+          "breakdown": {
+            "systemTokens": 394,
+            "toolsTokens": 9969,
+            "messageTokens": 15511
+          }
+        }
+      },
+      "turnBoundary": {
+        "ver": 2,
+        "seq": 563,
+        "val": {
+          "openTurnStartSeq": null,
+          "lastStepStartSeq": 556,
+          "lastStepBoundary": {
+            "kind": "end",
+            "seq": 558
+          },
+          "lastTurn": 3
+        }
+      },
+      "inbox": {
+        "ver": 1,
+        "seq": 563,
+        "val": {
+          "next-turn": [],
+          "next-step": []
+        }
+      },
+      "sessionStats": {
+        "ver": 1,
+        "seq": 563,
+        "val": {
+          "turns": 3,
+          "steps": 59,
+          "llmMs": 1045309,
+          "toolMs": 40873,
+          "ttftMs": 468068,
+          "ttftSteps": 58,
+          "decodeMs": 577241,
+          "decodeTokens": 27036,
+          "lastTurn": 3,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "turnOutline": {
+        "ver": 2,
+        "seq": 563,
+        "val": {
+          "turns": [
+            {
+              "turn": 1,
+              "seq": 11,
+              "prompt": "можешь изучить проект и узнать почему у меня перс…",
+              "response": "Скрипт наткнулся на иероглифы при выводе в консоль — перезапускаю с UTF-8 выводом."
+            },
+            {
+              "turn": 2,
+              "seq": 412,
+              "prompt": "опиши изменения и как запустить",
+              "response": ""
+            },
+            {
+              "turn": 3,
+              "seq": 533,
+              "prompt": "ты мне кажется что-то не то делаешь. можешь адапт…",
+              "response": "Понял, ты прав — суть в том, что AIRI настроена на Ollama (порт 11434), а Strata отдаёт API на 8080. Сейчас посмотрю, к…"
+            }
+          ],
+          "draft": ""
+        }
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 563,
+        "val": "standard"
+      },
+      "userQuestions": {
+        "ver": 2,
+        "seq": 563,
+        "val": {
+          "inheritedEventCount": 0,
+          "timed": false,
+          "questions": {
+            "active": [],
+            "settled": []
+          }
+        }
+      },
+      "permissions": {
+        "ver": 2,
+        "seq": 563,
+        "val": {
+          "preset": "strata-bypass",
+          "sandbox": "danger-full-access",
+          "approval": "never",
+          "seeded": false
+        }
+      },
+      "workingDirectory": {
+        "ver": 1,
+        "seq": 563,
+        "val": "C:\\Users\\Norikae\\Documents\\Strata\\Workspace"
+      },
+      "subagentCatalog": {
+        "ver": 6,
+        "seq": 563,
+        "val": {
+          "inheritedEventCount": 0
+        }
+      },
+      "subagentTiming": {
+        "ver": 3,
+        "seq": 563,
+        "val": {
+          "descriptorSeen": false,
+          "settledMs": 0
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 563,
+        "val": {}
+      },
+      "timeContext": {
+        "ver": 2,
+        "seq": 563,
+        "val": {
+          "lastMessageTime": 1793283807265,
+          "lastInjectionTime": 1793283393258,
+          "lastTurnInjectionTime": null
+        }
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 563,
+        "val": null
+      },
+      "plan": {
+        "ver": 3,
+        "seq": 563,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null,
+          "activeAtLastHeader": false
+        }
+      },
+      "subagentModelSelectionPolicy": {
+        "ver": 1,
+        "seq": 563,
+        "val": [
+          {
+            "provider": "strata-local",
+            "model": "iq3_s"
+          }
+        ]
+      },
+      "harnessDevLegacyPrompt": {
+        "ver": 1,
+        "seq": 563,
+        "val": {
+          "source": null,
+          "web": null
+        }
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 563,
+        "val": {
+          "lastUsed": {
+            "provider": "strata-local",
+            "model": "iq3_s",
+            "reasoningEffort": "medium"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 563,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1793283527326
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 563,
+        "val": null
+      }
+    }
+  }
+}
